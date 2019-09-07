@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task Manager Log In</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body onbeforeunload="return noback()">
+    <div class="form-container">
+
+      <form id="form">
+        <h2>Task Manager</h2>
+        <small>Lets you keep up to date with your day-to-day activities</small>
+        <div class="mail-container">
+          <img src="mail.png" alt="" id="mail-icon"><input type="email" placeholder="Enter Email" id="email">
+        </div>
+        <div class="password-container">
+          <img src="password.png" alt="" id="pass-icon"><input type="password" placeholder="Password" id="password"><span id="show">Show</span><input type="checkbox" id="check" onclick="showPassword()">
+        </div>
+        <div class="checkbox-container">
+
+        </div>
+        <button type="submit" name="button" id="btn">Sign In</button>
+        <button type="button" name="button" id="btn-r">Register</button>
+      </form>
+
+      <form id="form-register">
+        <h2 style="margin-bottom: 20px;">Start Your Journey</h2>
+        <input type="text" placeholder="Enter Name" id="r-name">
+        <input type="email" placeholder="Enter Email" id="r-email">
+        <input type="password" placeholder="Enter Password" id="r-password">
+        <input type="password" placeholder="Confirm Password" id="r-cpassword">
+        <button type="submit" id="r-btn">Submit</button>
+      </form>
+    </div>
+
+
+    <script src="index.js">
+
+    </script>
+
+    <script src="">
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TASK MANAGEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="home-search-icons">
+          <div class="home-search--home">
+              <button type="button" id="redirect-btn"><img src="home48.png"></button>
+          </div>
+
+          <div class="board-container">
+            <button type="button" id="board-btn"><img src="board.png" alt=""></button>
+          </div>
+          <div class="home-search--search">
+            <input type="search" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="logo-container">
+          <h2>TASK MANAGER</h2>
+        </div>
+
+        <div class="addAndProfile-container">
+          <div class="addAndProfile--add">
+            <button type="button" name="button" id="add-btn"><img src="add48.png" id="img48"></button>
+          </div>
+          <div class="addAndProfile--profile">
+            <img src="c.jpg" height="50" alt="" id="c">
+          </div>
+        </div>
+      </nav>
+
+      <div class="logout-info">
+        <div class="logout-info--name">
+          <h2 id="userHeading">Sbusiso</h2>
+        </div>
+        <hr>
+        <div class="logout-info--logout">
+          <span id="user-out">Logout</span>
+        </div>
+        <button type="button" name="button"><img src="hide.png" height="10"></button>
+      </div>
+    </header>
+    <main>
+      <div class="cards-container">
+        <div class="backlog-card__container" ondragover="allowdrop(event)" ondrop="drop(event)">
+          <div class="backlog-card--heading">
+            <h2>Backlog</h2>
+          </div>
+          <div class="backlog-card">
+            <ul class="backlog-card--list">
+
+            </ul>
+          </div>
+
+          <button type="button" id="btn"><img src="add-sign.png" alt="add"></button>
+        </div>
+        <div class="inprogress-card__container" ondragover="allowdrop(event)" ondrop="drop(event)">
+          <div class="inprogress-card--heading">
+            <h2>In Progress</h2>
+          </div>
+          <div class="progress-card">
+            <ul class="progress-card--list">
+
+            </ul>
+          </div>
+        </div>
+        <div class="onhold-card__container" ondrop="drop(event)" ondragover="allowdrop(event)">
+          <div class="onhold-card--heading">
+            <h2>On Hold</h2>
+          </div>
+          <div class="onhold-card">
+            <ul class="onhold-card--list">
+
+            </ul>
+          </div>
+
+        </div>
+        <div class="pending-card__container" ondragover="allowdrop(event)" ondrop="drop(event)">
+          <div class="pending-card--heading">
+            <h2>Pending</h2>
+          </div>
+          <div class="pending-card">
+            <ul class="pending-card--list">
+
+            </ul>
+          </div>
+        </div>
+        <div class="complete-card__container" ondragover="allowdrop(event)" ondrop="drop(event)">
+          <div class="complete-card--heading">
+            <h2>Complete</h2>
+          </div>
+          <div class="complete-card">
+            <ul class="complete-card--list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-box">
+        <form id="form">
+          <h2 class="form-title">ADD TASK</h2>
+          <label for="text">Task Name</label>
+          <input type="text" placeholder="Task Description" id="desc">
+          <label for="option">User Id</label>
+          <select class="users">
+
+          </select>
+          <label for="option">Group Id</label>
+          <select class="groups">
+          </select>
+          <button type="submit" id="btn-form"><img src="add50g.png"></button>
+          <button type="button" id="btn-hide"><img src="hide.png"></button>
+        </form>
+      </div>
+    </main>
+
+
+    <script src="task.js">
+
+    </script>
+  </body>
+</html>
