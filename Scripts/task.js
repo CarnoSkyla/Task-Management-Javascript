@@ -163,7 +163,7 @@ function displayTask() {
   var taskLocalData = JSON.parse(localStorage.getItem('task'));
   var ul = document.querySelector('.backlog-card--list');
   taskLocalData.forEach(function(task, index) {
-    ul.innerHTML += `<li class="backlog-list" data-id="${index}" id="list" ondragover="dragover(event)" draggable="true" ondragstart="drag(event)" ondragleave="dragleave(event)" ondragenter="dragenter(event)">${task.TaskDescription}<br /><img src="edit.png" alt="edit" style="margin: 10px 10px 0 0;" id="img1"><img src="delete.png" alt="edit" id="img2"></li>`
+    ul.innerHTML += `<li class="backlog-list" data-id="${index}" id="list" ondragover="dragover(event)" draggable="true" ondragstart="drag(event)" ondragleave="dragleave(event)" ondragenter="dragenter(event)">${task.TaskDescription}<br /><img src="../Images/edit.png" alt="edit" style="margin: 10px 10px 0 0;" id="img1"><img src="../Images/delete.png" alt="edit" id="img2"></li>`
   })
 
   localStorage.setItem('task', JSON.stringify(taskLocalData))
