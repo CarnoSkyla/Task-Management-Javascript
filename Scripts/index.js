@@ -16,11 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function logUser() {
+
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   var users = JSON.parse(localStorage.getItem('users'))
   window.location.href = 'task.html'
-/*
+  
   var eachUserEmail = users.find(function(user) {
     return user.email === email && user.password === password
   })
@@ -33,7 +34,7 @@ function logUser() {
     storeToken();
     window.location.href = 'task.html'
   }
-  */
+  
 }
 
 
